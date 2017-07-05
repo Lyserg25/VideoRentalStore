@@ -11,6 +11,14 @@
 </p>
 
 <p>
+  <strong>Genre:</strong>
+  <% if @genre %>
+   <%= link_to @product.genre.name, @product.genre %>
+  <% else %>No associated genre
+  <% end %>
+</p>
+
+<p>
   <strong>Amount:</strong>
   <%= @product.amount %>
 </p>
