@@ -26,7 +26,15 @@
     <%= form.number_field :amount, id: :product_amount %>
   </div>
 
+  <div class="field">
+    <%= form.label :category %>
+    <%= form.collection_select :category_id, Category.all, :id, :name %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
 <% end %>
+
+<!--%= form.collection_select :category_id, Category.all, :id, :name, :include_blank => false %-->
+<!--%= form.select "category_id", options_from_collection_for_select(Category.all, "id", "name", params[:category_id]) %-->
