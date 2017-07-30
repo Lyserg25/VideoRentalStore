@@ -1,11 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  description: MyText
-  amount: 1
+  title: Ghostwriter
+  description: Description
+  genre: one
+  amount: 2
+  category: one
 
 two:
-  title: MyString
-  description: MyText
-  amount: 1
+  title: Disturbia
+  description: Description
+  genre: two
+  amount: 3
+  category: two
