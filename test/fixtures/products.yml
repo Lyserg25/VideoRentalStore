@@ -13,3 +13,10 @@ two:
   genre: two
   amount: 3
   category: two
+
+three:
+  title: Split
+  description: Description
+  genre: two
+  amount: 1
+  category: two
