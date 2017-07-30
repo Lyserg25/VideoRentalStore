@@ -8,7 +8,7 @@
 c1 = Category.create(name: "DVD")
 c2 = Category.create(name: "Blu-Ray")
 c3 = Category.create(name: "PS4 Game")
-c3 = Category.create(name: "PC Game")
+c4 = Category.create(name: "PC Game")
 #c.products.create(title: "Harry Potter", description:"Harry Potter", amount: "2")
 
 g1 = Genre.create(name: "Drama")
