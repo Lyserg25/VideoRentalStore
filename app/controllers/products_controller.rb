@@ -1,4 +1,6 @@
 class ProductsController < ApplicationController
+
+  skip_before_action :authorize, only: [:index, :show]
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
   # GET /products
@@ -11,7 +13,7 @@ class ProductsController < ApplicationController
   # GET /products/1.json
   def show
     @category = @product.category
-    @genre = @product.genre   
+    @genre = @product.genre
   end
 
   # GET /products/new
