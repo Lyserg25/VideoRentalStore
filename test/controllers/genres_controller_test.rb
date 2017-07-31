@@ -2,6 +2,8 @@ require 'test_helper'
 
 class GenresControllerTest < ActionDispatch::IntegrationTest
   setup do
+    @user = users(:one)
+    login(@user)
     @genre = genres(:one)
   end
 

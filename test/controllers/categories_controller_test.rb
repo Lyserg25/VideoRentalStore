@@ -2,6 +2,8 @@ require 'test_helper'
 
 class CategoriesControllerTest < ActionDispatch::IntegrationTest
   setup do
+    @user = users(:one)
+    login(@user)
     @category = categories(:one)
   end
 

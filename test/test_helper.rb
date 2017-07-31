@@ -24,4 +24,15 @@ class ActionDispatch::IntegrationTest
     !session[:user_id].nil?
   end
 
+  def login(user)
+    post login_url, params: {session: { name:  user.name, password: 'secret'}}
+  end
+
+  def login_for_capybara(user)
+    visit login_path
+    fill_in "Name", with: user.name
+    fill_in "Password", with: 'secret'
+    click_button "Log in"
+  end
+
 end

@@ -2,6 +2,8 @@ require 'test_helper'
 
 class ProductsControllerTest < ActionDispatch::IntegrationTest
   setup do
+    @user = users(:one)
+    login(@user)
     @product = products(:one)
   end
 
